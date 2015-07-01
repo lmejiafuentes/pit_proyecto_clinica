@@ -27,6 +27,22 @@
 			FROM tb_persona 
 			WHERE  dni_per=#{dni} and tipo_per=2
   </select>
+  
+  
+  
+  
+  
+  
+  
+  <insert id="ingresarOrdenAtencion" parameterType="ordenatencion">
+		INSERT INTO  tb_ordenatencion(dni_per,observaciones,codigotbexamen,fechaordatencion) 
+					values(#{dni},#{observaciones},#{codigotbexamen},#{fechaordatencion});
+		</insert>
+		
+		<insert id="agregarDetalleOrdenAtencion" parameterType="detalleordexa">
+		INSERT INTO  tb_ordenatencion(dni_per,observaciones,codigotbexamen,fechaordatencion) 
+					values(#{dni},#{observaciones},#{codigotbexamen},#{fechaordatencion});
+		</insert>
 		
 		
 	</mapper>

@@ -5,8 +5,9 @@ import java.util.List;
 import org.apache.ibatis.session.SqlSession;
 
 import persistencia.mybatis.mapper.PacienteMapper;
-
 import util.MyBatisUtil;
+import model.Detalleordenatencionexamenes;
+import model.OrdenAtencion;
 import model.Paciente;
 
 public class PacienteServiceDAO implements PacienteService {
@@ -30,5 +31,18 @@ public class PacienteServiceDAO implements PacienteService {
 		Paciente paciente=pacienteMapper.buscarpaciente(dni);
 		session.close();
 		return paciente;
+	}
+
+	@Override
+	public void ingresarOrdenAtencion(OrdenAtencion ord) throws Exception {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void agregarDetalleOrdenAtencion(
+			List<Detalleordenatencionexamenes> detalle) throws Exception {
+		// TODO Auto-generated method stub
+		
 	}
 }
