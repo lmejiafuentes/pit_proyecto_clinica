@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC
+	"-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	
+<mapper namespace="persistencia.mybatis.mapper.UsuarioMapper">
+	<select id="getTipoPersona" resultType="String" parameterType="usuario">
+	select tp.desc_tipper from tb_tipo_persona tp, tb_persona p, tb_usuario u
+	where tp.tipoper=p.tipo_per and u.dniper=p.dni_per
+	and u.dniper=#{cuenta} and u.clave=#{clave} 
+	</select>
+</mapper>

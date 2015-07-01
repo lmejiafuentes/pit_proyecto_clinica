@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org./dtds/struts-2.3.dtd">
+<struts>
+	<package name="struts-paciente" extends="demo" namespace="/paciente">
+	
+		<action name="inicializarPaciente" class="action.PacienteAction">
+			<result type="tiles">d_nuevoPaciente</result>
+		</action>
+		
+		<action name="registrarPaciente" class="action.PacienteAction" method="registrar">
+			<result type="tiles">d_resultadoPaciente</result>
+			<result name="input" type="tiles">d_nuevoPaciente</result>
+		</action>
+		<!-- registrar orden de atencion -->
+		<action name="rediRegOrdAte" >
+			<result type="tiles">regiOrdAten</result>
+		</action>
+		
+		<action name="buscarPaciente" class="action.PacienteAction" method="buscar">
+			<result type="tiles">d_mostrarPaciente</result>
+		</action>
+		
+	</package>
+</struts>

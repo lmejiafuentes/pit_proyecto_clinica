@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org//dtds/struts-2.3.dtd">
+<struts>
+	<constant name="struts.custom.i18n.resources" value="recursos.textos"/>
+	<constant name="struts.enable.DynamicMethodInvocation" value="false"/>
+	<include file="struts-paciente.xml"/>
+	<include file="struts-seguridad.xml"/>
+	
+	
+	
+	<package name="demo" extends="struts-default">
+		<result-types>
+			<result-type name="tiles" class="org.apache.struts2.views.tiles.TilesResult"/>
+		</result-types>
+		
+	<action name="inicio">
+		<result type="tiles">login_area</result>
+	</action>
+		
+	<!--  <action name="inicio">
+		<result >/WEB-INF/paginas/login.jsp</result>
+	</action>
+	 -->
+		
+	</package>
+	
+</struts>

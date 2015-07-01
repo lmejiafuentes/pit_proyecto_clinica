@@ -1,0 +1,55 @@
+<!DOCTYPE validators PUBLIC
+"-//Apache Struts//XWork Validator 1.0.3//EN"
+"http://struts.apache.org/dtds/xwork-validator-1.0.3.dtd">
+
+<validators>
+	<field name="paciente.nombre">
+	
+		<field-validator type="requiredstring" short-circuit="true">
+			<message key="campo.requerido"/>
+		</field-validator>
+	</field>
+	
+	<field name="paciente.dni"> 
+		<field-validator type="requiredstring" short-circuit="true">
+				<message key="campo.requerido"/>
+		</field-validator>
+	</field>
+	
+	<field name="paciente.apellidopaterno">
+		<field-validator type="requiredstring" short-circuit="true">
+			<message key="campo.requerido"/>
+		</field-validator>
+	</field>
+	
+	<field name="paciente.apellidomaterno">
+		<field-validator type="requiredstring" short-circuit="true">
+			<message key="campo.requerido"/>
+		</field-validator>
+	</field>
+	
+	<field name="paciente.genero">
+		<field-validator type="requiredstring" short-circuit="true">
+			<message key="campo.requerido"/>
+		</field-validator>
+	</field>
+	
+	<field name="paciente.telefono">
+		<field-validator type="requiredstring" short-circuit="true">
+			<message key="campo.requerido"/>
+		</field-validator>
+	</field>
+	
+	<field name="paciente.direccion">
+		<field-validator type="requiredstring" short-circuit="true">
+			<message key="campo.requerido"/>
+		</field-validator>
+	</field>
+		
+	<field name="paciente.fechaNacimiento">
+		<field-validator type="requiredstring" short-circuit="true">
+			<message key="campo.requerido"/>
+		</field-validator>
+	</field>
+	
+</validators>

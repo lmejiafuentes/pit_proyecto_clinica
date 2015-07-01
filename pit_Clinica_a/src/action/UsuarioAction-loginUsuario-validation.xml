@@ -1,0 +1,17 @@
+<!DOCTYPE validators PUBLIC
+"-//Apache Struts//XWork Validator 1.0.3//EN"
+"http://struts.apache.org/dtds/xwork-validator-1.0.3.dtd">
+
+<validators>
+	<field name="usuario.cuenta">
+		<field-validator type="requiredstring">
+			<message key="campo.requerido"/>
+		</field-validator>
+	</field>
+	<field name="usuario.contrasena">
+		<field-validator type="requiredstring">
+			<message key = "campo.requerido"/>
+		</field-validator>
+	</field>
+
+</validators>

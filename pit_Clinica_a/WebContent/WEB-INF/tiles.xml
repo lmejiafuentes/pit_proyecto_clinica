@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC 
+"-//Apache Software Foundation//DTD Tiles Configuration
+2.0//EN" "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+<definition name="d_plantilla" template="/WEB-INF/paginas/plantillas/plantilla.jsp">
+	<put-attribute name="cabecera" value="/WEB-INF/paginas/secciones/cabecera.jsp"/>
+	<put-attribute name="menu" value="/WEB-INF/paginas/secciones/menu.jsp"/>
+	<put-attribute name="contenido" value=""/>
+	<put-attribute name="pie" value="/WEB-INF/paginas/secciones/pie.jsp"/>
+</definition>
+
+<definition name="d_plantilla_log" template="/WEB-INF/paginas/plantillas/plantilla_log.jsp">
+	<put-attribute name="cabecera" value="/WEB-INF/paginas/secciones/cabecera.jsp"/>
+	<put-attribute name="contenido" value=""/>
+	<put-attribute name="pie" value="/WEB-INF/paginas/secciones/pie.jsp"/>
+</definition>
+
+<definition name="d_principal" extends="d_plantilla">
+	<put-attribute name="contenido" value="/WEB-INF/paginas/principal.jsp"/>
+</definition>
+
+<definition name="d_nuevoPaciente" extends="d_plantilla">
+	<put-attribute name="contenido" value="/WEB-INF/paginas/paciente/nuevo.jsp"/>
+</definition>
+
+<definition name="d_resultadoPaciente" extends="d_plantilla">
+	<put-attribute name="contenido" value="/WEB-INF/paginas/paciente/resultado.jsp"/>
+</definition>
+
+<definition name="login_area" extends="d_plantilla_log">
+	<put-attribute name="contenido" value="/WEB-INF/paginas/login.jsp"/>
+</definition>
+
+<definition name="regiOrdAten" extends="d_plantilla">
+	<put-attribute name="contenido" value="/WEB-INF/paginas/paciente/registrarOrdenAtencion.jsp"/>
+</definition>
+
+	<definition name="d_mostrarPaciente" extends="d_plantilla">
+		<put-attribute name="contenido" value="/WEB-INF/paginas/paciente/registrarOrdenAtencion.jsp"/>	
+	</definition>
+	
+</tiles-definitions>
