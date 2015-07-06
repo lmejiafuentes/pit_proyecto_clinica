@@ -22,5 +22,11 @@
 			<result type="tiles">d_mostrarPaciente</result>
 		</action>
 		
+		<!-- citas -->
+		<action name="regiCitaOrdAten" >
+			<result type="tiles">d_regiCitaOrdAten</result>
+		</action>
+		
+		
 	</package>
 </struts>

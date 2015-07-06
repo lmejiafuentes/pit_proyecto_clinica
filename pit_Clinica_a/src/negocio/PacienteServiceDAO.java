@@ -21,7 +21,7 @@ public class PacienteServiceDAO implements PacienteService {
 		pacienteMapper.insertar(paciente);
 		session.commit();
 		session.close();
-	}
+	}   
 
 	@Override
 	public Paciente buscar(String dni) throws Exception {

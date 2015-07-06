@@ -11,6 +11,9 @@
 	</settings>
 	
 	<typeAliases>
+		<typeAlias type="model.OrdenAtencion" alias="detalleordexa"/>
+		<typeAlias type="model.OrdenAtencion" alias="ordenatencion"/>
+		<typeAlias type="model.Usuario" alias="usuario"/>
 		<typeAlias type="model.Paciente" alias="paciente"/>
 		<typeAlias type="model.Usuario" alias="usuario"/>
 	</typeAliases>

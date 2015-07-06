@@ -5,7 +5,13 @@
 				<s:text name="titulo.menu" /> 
 			</td>
 		</tr>
-		
+		<tr>
+			<td style="background-color: #CEF6F5;border-radius:10px;padding: 5px;">
+				<a href="<s:url action="regiCitaOrdAten" namespace="/paciente"/>">
+					<s:text name="label.generarCita" />
+					</a>
+			</td>
+		</tr>
 		  <tr>
 			<td style="background-color: #CEF6F5;border-radius:10px;padding: 5px;">
 				<a href="<s:url action="rediRegOrdAte" namespace="/paciente"/>">

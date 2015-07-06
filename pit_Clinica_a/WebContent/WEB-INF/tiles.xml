@@ -40,7 +40,7 @@
 		<put-attribute name="contenido" value="/WEB-INF/paginas/paciente/registrarOrdenAtencion.jsp"/>	
 	</definition>
 	
-	<definition name="regiCitaOrdAten" extends="d_plantilla">
+	<definition name="d_regiCitaOrdAten" extends="d_plantilla">
 	<put-attribute name="contenido" value="/WEB-INF/paginas/paciente/generarCita.jsp"/>
 </definition>
 	

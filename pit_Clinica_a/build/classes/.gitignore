@@ -1,10 +1,1 @@
-/action
-/log4.properties
-/model
-/negocio
 /persistencia
-/recursos
-/struts-paciente.xml
-/struts-seguridad.xml
-/struts.xml
-/util
