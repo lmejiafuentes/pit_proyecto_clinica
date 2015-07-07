@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC
+	"-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+	<mapper namespace="persistencia.mybatis.mapper.MedicoMapper">
+	
+				<resultMap type="medico" id="rmmedico">
+					<id column="dni_per" property="dni" jdbcType="VARCHAR"/>
+					<result column="nom_per" property="nombre" jdbcType="VARCHAR"/>
+					<result column="ape_pat_per" property="apellidopaterno" jdbcType="VARCHAR"/>
+					<result column="ape_mat_per" property="apellidomaterno" jdbcType="VARCHAR"/>
+					<result column="genero" property="genero" jdbcType="VARCHAR"/>
+					<result column="telefono_per" property="telefono" jdbcType="VARCHAR"/>
+					<result column="direccion_per" property="direccion" jdbcType="VARCHAR"/>
+					<result column="fec_nac" property="fechaNacimiento" jdbcType="VARCHAR"/>
+				
+					<result column="cod_especialidad" property="cod_especialidad" jdbcType="VARCHAR"/>
+					<result column="estado_per" property="estado_per" jdbcType="VARCHAR"/>
+					<result column="tipo_per" property="tipo_per" jdbcType="VARCHAR"/>
+				
+				</resultMap>
+				
+				 <select id="listamedico" resultMap="rmmedico"  >
+			  			SELECT dni_per, nom_per, ape_pat_per, ape_mat_per,genero,telefono_per,direccion_per,
+			 			fec_nac,cod_especialidad,tipo_per
+						FROM tb_persona 
+						WHERE    tipo_per=1
+  				</select>
+  
+	</mapper>

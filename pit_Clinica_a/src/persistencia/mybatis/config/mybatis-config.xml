@@ -11,6 +11,7 @@
 	</settings>
 	
 	<typeAliases>
+		<typeAlias type="model.Medico" alias="medico"/>
 		<typeAlias type="model.OrdenAtencion" alias="detalleordexa"/>
 		<typeAlias type="model.OrdenAtencion" alias="ordenatencion"/>
 		<typeAlias type="model.Usuario" alias="usuario"/>
@@ -23,7 +24,7 @@
         <environment id="clase">
             <transactionManager type="JDBC"/>
             <dataSource type="UNPOOLED">
-            <!-- <property name="d" value="java:comp/env/jdbc/Clinica_Pit"/>  -->   
+
              <property name="driver" value="${driver}"/>  
                           <property name="driver" value="${driver}"/>  
                           <property name="url" value="${url}"/>  

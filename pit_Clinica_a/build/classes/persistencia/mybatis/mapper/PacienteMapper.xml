@@ -10,7 +10,7 @@
 			{call(#{dni},#{nombre},#{apellidopaterno},#{apellidomaterno},#{genero},#{telefono},#{direccion},#{fechaNacimiento})}
 		</insert>
 		
-	<resultMap type="paciente" id="rmPacienteBasico">
+	<resultMap type="paciente" id="rmMedico">
 		<id column="dni_per" property="dni" jdbcType="VARCHAR"/>
 		<result column="nom_per" property="nombre" jdbcType="VARCHAR"/>
 		<result column="ape_pat_per" property="apellidopaterno" jdbcType="VARCHAR"/>
@@ -21,7 +21,7 @@
 		<result column="fec_nac" property="fechaNacimiento" jdbcType="VARCHAR"/>
 	</resultMap>
 	
-	 <select id="buscarpaciente" resultMap="rmPacienteBasico" parameterType="String">
+	 <select id="listamedico" resultMap="rmMedico" >
   			SELECT dni_per, nom_per, ape_pat_per, ape_mat_per,genero,telefono_per,direccion_per,
  			fec_nac
 			FROM tb_persona 

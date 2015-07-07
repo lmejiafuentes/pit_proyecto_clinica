@@ -1,8 +1,11 @@
 package action;
 
+import java.util.List;
+
 import util.Constantes;
 import negocio.PacienteService;
 import negocio.PacienteServiceDAO;
+import model.Medico;
 import model.Paciente;
 
 import com.opensymphony.xwork2.ActionSupport;
@@ -15,6 +18,27 @@ public class PacienteAction extends ActionSupport implements Preparable {
 	private static final long serialVersionUID = -7076733280665701311L;
 	private Paciente paciente;
 	PacienteService pacienteService=new PacienteServiceDAO();
+	//-------------------
+	
+	public Medico medico;
+
+	public Medico getMedico() {
+		return medico;
+	}
+
+	public void setMedico(Medico medico) {
+		this.medico = medico;
+	}
+	public List<Medico> listam;
+	
+	public List<Medico> getListam() {
+		return listam;
+	}
+
+	public void setListam(List<Medico> listam) {
+		this.listam = listam;
+	}
+ //-------------------
 	public Paciente getPaciente() {
 		return paciente;
 	}
@@ -43,5 +67,13 @@ public class PacienteAction extends ActionSupport implements Preparable {
 		
 	
 	}
+	public String redirect() throws Exception{
+		
+		MedicoAction ma=new MedicoAction();
+		listam=ma.ListarMed();
+		return SUCCESS;
+	}
+	
+ 
 
 }

@@ -1,7 +1,9 @@
 package action;
 
+import java.awt.List;
 import java.util.Map;
 
+import model.Medico;
 import model.Usuario;
 import negocio.LoginService;
 import negocio.LoginServiceDAO;
@@ -33,7 +35,7 @@ public class UsuarioAction extends ActionSupport implements SessionAware {
 	public void setUsuario(Usuario usuario) {
 		this.usuario = usuario;
 	}
-	
+ 
 	public String login() throws Exception{
 		String vista="";
 		LoginService loginService=new LoginServiceDAO();

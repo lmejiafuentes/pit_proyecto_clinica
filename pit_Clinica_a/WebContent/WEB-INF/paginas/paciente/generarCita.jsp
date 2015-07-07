@@ -13,7 +13,7 @@
       </tr>
         <tr >
 	<td>
-	<s:select list=""></s:select>
+	<s:select list="listam" label="Medicos" name="medico.dni"  listKey="dni" listValue="nombre" />
 	</td>
       </tr>
 	<tr >

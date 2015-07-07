@@ -23,7 +23,7 @@
 		</action>
 		
 		<!-- citas -->
-		<action name="regiCitaOrdAten" >
+		<action name="regiCitaOrdAten" class="action.PacienteAction"  method="redirect">
 			<result type="tiles">d_regiCitaOrdAten</result>
 		</action>
 		
