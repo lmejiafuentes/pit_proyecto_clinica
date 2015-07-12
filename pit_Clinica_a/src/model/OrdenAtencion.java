@@ -1,6 +1,7 @@
 package model;
 
 import java.sql.Date;
+import java.util.List;
 
 public class OrdenAtencion {
 
@@ -41,7 +42,18 @@ public class OrdenAtencion {
 	public void setDnimedic(String dnimedic) {
 		this.dnimedic = dnimedic;
 	}
+	 public List<String> ltexm;
 	 
+	public int getlenght(String codigotbexamen){
+		return codigotbexamen.length();
+	}
+	public void addtolistltexm(String codigotbexamen){
+		String varop;
+		for(int i=0; i<=getlenght(codigotbexamen);i++){
+			varop= String.valueOf( codigotbexamen.charAt(i));
+			ltexm.add(varop);
+		} 
+	}
 	
-
+	
 }

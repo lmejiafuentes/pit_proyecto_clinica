@@ -15,12 +15,11 @@ import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.Preparable;
 
 public class PacienteAction extends ActionSupport implements Preparable {
-	/**
-	 * 
-	 */
+ 
 	private static final long serialVersionUID = -7076733280665701311L;
 	private Paciente paciente;
 	PacienteService pacienteService=new PacienteServiceDAO();
+	
 	//-------------------
 	
 	public Medico medico;
@@ -73,6 +72,10 @@ public class PacienteAction extends ActionSupport implements Preparable {
 	public String buscar() throws Exception{
 		
 		paciente=pacienteService.buscar(paciente.getDni());
+		
+		ExamenesService ma=new  ExamenesServiceDAO();
+		listexamenes=ma.listaexamenes();
+		
 		return SUCCESS;
 	}
 	

@@ -1,6 +1,7 @@
 SELECT * FROM clinica_pit.tb_persona;
 
 select * from tb_tipo_persona;
+select * from tb_persona;
 
 use clinica_pit;
 
@@ -15,14 +16,13 @@ insert into tb_persona values('12345698','carol mayer','carol','mayer','femenino
 alter table tb_ordenatencion 
 		add column dnimedic varchar(8);
 
-select * from tb_ordenatencion
+select * from tb_ordenatencion;
 
 
+select * from tb_examenes;
 
-
-
-
-
+alter table  tb_ordenatencion
+		add column codigoorden varchar(8) primary key;
 
 
 
