@@ -17,6 +17,7 @@
 		<typeAlias type="model.Usuario" alias="usuario"/>
 		<typeAlias type="model.Paciente" alias="paciente"/>
 		<typeAlias type="model.Usuario" alias="usuario"/>
+		<typeAlias type="model.Examenes" alias="examen"/>
 	</typeAliases>
 	
     <environments default="clase">

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC
+	"-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+	<mapper namespace="persistencia.mybatis.mapper.ExamenesMapper">
+	
+				<resultMap type="examen" id="rmexamen">
+					<id column="codigo" property="codigo" jdbcType="VARCHAR"/>
+					<result column="prestacion" property="prestacion" jdbcType="VARCHAR"/>
+					<result column="precio" property="precio" />				
+				</resultMap>
+				
+				 <select id="listaexamenes" resultMap="rmexamen"  >
+			  			SELECT codigo,prestacion,precio
+						FROM tb_examenes
+  				</select>
+  
+	</mapper>

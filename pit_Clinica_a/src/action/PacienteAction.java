@@ -3,8 +3,11 @@ package action;
 import java.util.List;
 
 import util.Constantes;
+import negocio.ExamenesService;
+import negocio.ExamenesServiceDAO;
 import negocio.PacienteService;
 import negocio.PacienteServiceDAO;
+import model.Examenes;
 import model.Medico;
 import model.Paciente;
 
@@ -38,7 +41,20 @@ public class PacienteAction extends ActionSupport implements Preparable {
 	public void setListam(List<Medico> listam) {
 		this.listam = listam;
 	}
- //-------------------
+	
+	public List<Examenes> listexamenes;
+	
+	
+	
+ public List<Examenes> getListexamenes() {
+		return listexamenes;
+	}
+
+	public void setListexamenes(List<Examenes> listexamenes) {
+		this.listexamenes = listexamenes;
+	}
+
+	//-------------------
 	public Paciente getPaciente() {
 		return paciente;
 	}
@@ -73,7 +89,12 @@ public class PacienteAction extends ActionSupport implements Preparable {
 		listam=ma.ListarMed();
 		return SUCCESS;
 	}
-	
+	public String getlistregordpac() throws Exception{
+		
+		ExamenesService ma=new  ExamenesServiceDAO();
+		listexamenes=ma.listaexamenes();
+		return SUCCESS;
+	}
  
 
 }

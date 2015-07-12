@@ -9,6 +9,7 @@ public class OrdenAtencion {
 	private String observaciones;
 	private String codigotbexamen;
 	private Date fechaordatencion;
+	private String dnimedic;
 	
 	public String getDni() {
 		return dni;
@@ -34,7 +35,13 @@ public class OrdenAtencion {
 	public void setFechaordatencion(Date fechaordatencion) {
 		this.fechaordatencion = fechaordatencion;
 	}
-	
+	public String getDnimedic() {
+		return dnimedic;
+	}
+	public void setDnimedic(String dnimedic) {
+		this.dnimedic = dnimedic;
+	}
+	 
 	
 
 }

@@ -86,17 +86,20 @@
 
 
 <s:form action="examenesRegOrdAte" namespace="/paciente" theme="bootstrap" enctype="multipart/form-data" cssClass="form-horizontal" >
-<table>
+<table border="1">
 
 	<tr >
 				 <td>
-					<s:label >Seleccionar Examenes</s:label>
+					<s:label >Seleccionar </s:label>
+			</td>
+			<td>
+					<s:label > Examenes disponibles</s:label>
 			</td>
      </tr>
-     <s:iterator value = ""  status = "stat">
+     <s:iterator value = "listexamenes"  status = "stat">
      			 <tr >
-				 		<td><s:checkbox  name = "select"  value = "select" /></td>
-						<td><s:property  value = "codigo" /></td> 
+				 		<td><s:checkbox  name = "select"  value = "codigo" /></td>
+						<!-- <td><s:property  value = "codigo" /></td>  --> 
 						<td><s:property  value = "prestacion" /></td> 	
     			 </tr>
      </s:iterator>

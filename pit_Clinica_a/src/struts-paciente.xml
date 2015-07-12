@@ -14,7 +14,7 @@
 			<result name="input" type="tiles">d_nuevoPaciente</result>
 		</action>
 		<!-- registrar orden de atencion -->
-		<action name="rediRegOrdAte" >
+		<action name="rediRegOrdAte" class="action.PacienteAction" method="getlistregordpac">
 			<result type="tiles">regiOrdAten</result>
 		</action>
 		
