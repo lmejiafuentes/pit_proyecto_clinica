@@ -2,7 +2,7 @@
 <%@ taglib prefix="sb" uri="/struts-bootstrap-tags" %>
 
 <div style="font-family: sans-serif;margin-bottom: 45px;background-color:transparent;color:black;border-radius:5px;padding: 10px;font-size: medium;" >
-<h2><s:text name="Registrar Orden De Atencion"></s:text></h2>
+<h2><s:text name="Atencion de Orden" ></s:text></h2>
 
 
 <s:form action="buscarPaciente" namespace="/paciente" theme="bootstrap" enctype="multipart/form-data" cssClass="form-horizontal" >
@@ -10,7 +10,7 @@
 
 	<tr >
 				 <td>
-	<s:textfield key="label.dni" name="paciente.dni" cssClass="form-control"  />
+	<s:textfield key="DNI" name="paciente.dni" cssClass="form-control"  />
 	</td>
       </tr>
 	<tr >

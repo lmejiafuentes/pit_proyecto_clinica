@@ -2,7 +2,7 @@
 <%@ taglib prefix="sb" uri="/struts-bootstrap-tags" %>
 
 <div style="font-family: sans-serif;margin-bottom: 45px;background-color:transparent;color:black;border-radius:5px;padding: 10px;font-size: medium;" >
-<h2><s:text name="Generar Cita"></s:text></h2>
+<h2><s:text name="Generar Orden"></s:text></h2>
 <s:form action="--------------------" namespace="/paciente"  enctype="multipart/form-data" cssClass="form-horizontal" >
 <table>
 
